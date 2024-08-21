@@ -1,0 +1,36 @@
+focus_tree = {
+    id = goblintown
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = GOT
+        }
+    }
+
+    default = no
+    reset_on_civilwar = no
+
+ #Custom focus start here
+
+
+
+
+ #focus Fate of Goblin-Town
+ focus = {
+    id = fateofgoblintown
+    icon = GFX_goal_mor_troll_warriors
+    ai_will_do = { factor 100 }
+    x = 5
+    y = 0
+    mutually_exclusive = { }
+    prerequisite = { }
+    cost = 12
+    available_if_capitulated = yes
+    completion_reward = { add_political_power = 100 }
+ }
+
+
+}
+
